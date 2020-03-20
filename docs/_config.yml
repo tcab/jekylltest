@@ -22,3 +22,8 @@ plugins:
     - jekyll-feed
     - jekyll-sitemap
     - jekyll-seo-tag
+
+baseurl: "/jekylltest"
+
+# Andy added
+assets: "/assets/css/styles.css"
