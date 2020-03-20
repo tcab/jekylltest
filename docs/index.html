@@ -1,0 +1,20 @@
+---
+# front matter tells Jekyll to process Liquid
+my_number: 5
+title: my jekyll experiments
+layout: default
+---
+<h1>{{ "Hello World!" | downcase }}</h1>
+<p>{{ "hi" | capitalize }} 
+    {{ "there" | upcase }}  
+    the number is {{ page.my_number }}</p>
+
+    <hr>
+    <h2>site.data.navigation</h2>
+    {{ site.data.navigation }}
+
+    <h2>posts</h2>
+    <a href="blog">blog</a>
+
+    <h2>production?</h2>
+    {{ jekyll.environment }}
