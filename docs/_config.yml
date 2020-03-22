@@ -1,3 +1,6 @@
+# remote_theme: pages-themes/architect  # didn't work
+theme: jekyll-theme-architect
+
 collections:
     authors:
       output: true

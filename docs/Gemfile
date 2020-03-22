@@ -2,14 +2,27 @@
 
 source "https://rubygems.org"
 
-git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
+# NORMAL SIMPLE FULLY CONTROLLED STYLES ETC.
+# 
+git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 # gem "rails"
 # gem "jekyll"
 gem "jekyll", github: "jekyll/jekyll"
-
 group :jekyll_plugins do
     gem 'jekyll-sitemap'
     gem 'jekyll-feed'
     gem 'jekyll-seo-tag'
 end
+
+
+# TO USE ARCHITECT THEME - REMOVE Gemfile.lock and 'bundle update'
+# see https://stackoverflow.com/questions/58598084/how-does-one-downgrade-jekyll-to-work-with-github-pages
+# this will install of Github official versions of jekyll, themes and associated plugins.
+# also use the architect version of docs/_layouts/default.html 
+# which I pinched from https://github.com/pages-themes/architect/blob/master/_layouts/default.html
+# 
+# will install all gh-pages allowed gems
+# see : https://pages.github.com/versions/
+# 
+# gem 'github-pages'
